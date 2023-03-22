@@ -46,4 +46,4 @@ chmod 770 /adm
 chmod 770 /sec
 chmod 770 /ven
 
-echo "---Fim do processo...---"
+echo "---Fim...---"
