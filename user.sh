@@ -21,6 +21,16 @@ useradd josefina -c "Josefina Souza" -m -s /bin/bash
 useradd amanda -c "Amanda Aragao" -m -s /bin/bash
 useradd rogerio -c "Rogeio Monte" -m -s /bin/bash
 
+usermod maria --password $(openssl passwd senha123)
+usermod carlos --password $(openssl passwd senha123)
+usermod joao --password $(openssl passwd senha123)
+usermod debora --password $(openssl passwd senha123)
+usermod sebastiana --password $(openssl passwd senha123)
+usermod roberto --password $(openssl passwd senha123)
+usermod josefina --password $(openssl passwd senha123)
+usermod amanda --password $(openssl passwd senha123)
+usermod rogerio --password $(openssl passwd senha123)
+
 gpasswd -M carlos,maria,joao GRP_ADM
 gpasswd -M debora,sebastiana,roberto GRP_VEN
 gpasswd -M josefina,amanda,rogerio GRP_SEC
